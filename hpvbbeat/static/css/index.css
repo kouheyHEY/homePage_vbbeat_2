@@ -1,0 +1,85 @@
+/* 全体 */
+.work-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* 作品ブロック */
+.block-work-abstract {
+    /* 大きさ */
+    width: 46%;
+    box-sizing: border-box;
+
+    /* 余白設定 */
+    margin: 2%;
+
+    /* 要素設定 */
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+}
+
+.block-work-abstract::before {
+    /* 大きさ */
+    width: 0px;
+    height: 0px;
+    /* 表示位置 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* 枠線 */
+    border-left: 2px solid transparent;
+    border-top: 2px solid transparent;
+    /* その他 */
+    content: "";
+    /* アニメーション設定 */
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+
+.block-work-abstract::after {
+    /* 大きさ */
+    width: 0px;
+    height: 0px;
+    /* 表示位置 */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /* 枠線 */
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    /* その他 */
+    content: "";
+    /* アニメーション設定 */
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+
+.block-work-abstract:hover::before,
+.block-work-abstract:hover::after {
+    /* 大きさ */
+    width: 30px;
+    height: 30px;
+    /* 枠線 */
+    border-color: black;
+    /* アニメーション設定 */
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+
+/* 作品サムネイル */
+.work-thumbneil {
+    /* 大きさ */
+    max-width: 100%;
+    height: auto;
+    /* 要素設定 */
+    display: block;
+}
+
+/* 作品情報 */
+.work-info {
+    /* 余白設定 */
+    margin: 2% 4%;
+    /* 要素設定 */
+    display: flex;
+    justify-content: space-between;
+}
