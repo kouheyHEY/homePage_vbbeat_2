@@ -13,4 +13,4 @@ def test1():
         "send_data1": "send1です。",
         "send_data2": "send2です。",
     }
-    return render_template("DeckMngr/test1.html", send_dict=send_dict)
+    return render_template("main/index.html", send_dict=send_dict)
