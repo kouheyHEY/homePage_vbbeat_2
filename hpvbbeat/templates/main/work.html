@@ -6,16 +6,17 @@
 <script>createLinkTag("{{ url_for('static', filename='css/work.css') }}", "stylesheet", "text/css")</script>
 
 <main>
-    <div class="work-gallery">
-        <!-- 各作品の表示 -->
-        <div class="block-work-abstract">
-            <img src="{{ url_for('static', filename='img/flask-logo.png') }}" class="work-thumbneil">
-            <div class="work-info">
-                <div class="work-caption">作品1</div>
-                <div class="work-upddate">2023-08-05</div>
-            </div>
-        </div>
+    <div class="work-detail">
+        <!-- 作品詳細の表示 -->
+        <img src="{{ url_for('static', filename='img/flask-logo.png') }}" class="work-thumbneil">
+        <div class="work-title">作品１</div>
+        <div class="work-exp">
+            作品の詳細ページです。作品の簡単な説明をします。<br>
+            簡単な説明１です。<br>
+            簡単な説明２でした。<br>
 
+        </div>
+        <div class="work-upddate">2023-08-05</div>
     </div>
 </main>
 
