@@ -1,0 +1,47 @@
+/* 全体 */
+.work-detail {
+    /* 大きさ */
+    max-width: 960px;
+    box-sizing: border-box;
+    /* 余白設定 */
+    margin: 0 auto;
+}
+
+/* サムネ */
+.work-thumbneil {
+    /* 大きさ */
+    max-width: 100%;
+    height: auto;
+    /* 要素設定 */
+    display: block;
+    /* 余白設定 */
+    margin: 0 auto;
+}
+
+/* 作品タイトル */
+.work-title {
+    /* 大きさ */
+    width: auto;
+    /* 余白設定 */
+    margin: 15px 0;
+}
+
+/* 作品説明 */
+.work-exp {
+    /* 大きさ */
+    width: auto;
+    /* 余白設定 */
+    margin: 15px 10px;
+
+}
+
+/* 作品更新日時 */
+.work-upddate {
+    /* 大きさ */
+    width: auto;
+    /* 要素設定 */
+    display: flex;
+    flex-direction: row-reverse;
+    /* 余白設定 */
+    margin: 15px 10px;
+}
