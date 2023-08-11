@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!-- css読み込みタグの生成 -->
+<script>createLinkTag("{{ url_for('static', filename='css/about.css') }}", "stylesheet", "text/css")</script>
+
+<main>
+    <div class="about">
+    </div>
+</main>
+
+{% endblock %}

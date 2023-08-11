@@ -1,8 +1,12 @@
 /* ヘッダ全体 */
 .header-area {
+    /* 大きさ */
+    height: 64px;
+    /* 余白 */
+    margin: 0 3%;
+    /* 要素設定 */
     display: flex;
     justify-content: space-between;
-    height: 65px;
     align-items: center;
 }
 
@@ -21,7 +25,7 @@
 
     /* 線の長さ */
     width: 100%;
-    height: 2px;
+    height: 4px;
     /* 位置 */
     position: absolute;
     background-color: black;
@@ -52,7 +56,7 @@
     background-color: rgba(0, 0, 0, 0.8);
     /* 位置 */
     position: fixed;
-    top: 65px;
+    top: 64px;
     left: 0;
     /* 余白設定 */
     padding: 0;
