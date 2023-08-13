@@ -7,6 +7,7 @@ app = Flask(__name__)
 app.config.from_object("hpvbbeat.config")
 # データベース設定
 db = SQLAlchemy(app)
+from hpvbbeat.models.data import work
 
 from hpvbbeat.views import views
 from hpvbbeat.views import views_work
